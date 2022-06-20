@@ -35,4 +35,8 @@ nav:
     - Overview: lectures/index.md
 
 plugins:
-    - search
+    - search:
+        lang:
+            - en
+            - ja
+        separator: '[\s\-\.]+'

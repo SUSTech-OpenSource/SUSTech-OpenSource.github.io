@@ -13,5 +13,9 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs-material
+      # make mkdoc-material a fixed version so that the forced replacement for search_index.py won't interrupt the deployment
+      - run: pip install mkdocs-material==8.3.6
+      - run: pip install jieba
+      # get global site-packages path, see https://stackoverflow.com/a/46071447/15820495
+      - run: cp search_index.py $(python -c 'import site; print(site.getsitepackages()[0])')/mkdocs/contrib/search/
       - run: mkdocs gh-deploy --force
