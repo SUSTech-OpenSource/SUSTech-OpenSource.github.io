@@ -1,0 +1,38 @@
+site_name: SUSTech-OpenSource
+repo_url: https://github.com/SUSTech-OpenSource/SUSTech-OpenSource.github.io
+site_url: https://SUSTech-OpenSource.github.io
+
+theme:
+  name: material
+  language: zh
+  features: 
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - search.share
+  logo: assets/images/logo-32px.jpg
+  favicon: assets/images/logo-32px.jpg
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home:
+    - Overview: index.md
+    - Recent Events: recent.md
+  - Codes:
+    - Overview: codes/index.md
+  - Lectures:
+    - Overview: lectures/index.md
+
+plugins:
+    - search
