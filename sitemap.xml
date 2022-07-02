@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://SUSTech-OpenSource.github.io/</loc>
+         <lastmod>2022-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://SUSTech-OpenSource.github.io/recent/</loc>
+         <lastmod>2022-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://SUSTech-OpenSource.github.io/codes/</loc>
+         <lastmod>2022-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://SUSTech-OpenSource.github.io/lectures/</loc>
+         <lastmod>2022-07-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
