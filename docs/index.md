@@ -10,8 +10,20 @@
 
 开源软件协会希望可以提供一个供南科大同学及更多同学的友好交流开源技术的平台，希望形成一个良好的开源开发氛围。
 
-[github organization链接](https://github.com/SUSTech-OpenSource/)
-
 ### 协会活动
 
 协会目前的活动主要是围绕在软件开发和课程开展中，请大家多多参与相关活动，希望大家多多支持。
+
+### 联系我们
+
+[github organization链接](https://github.com/SUSTech-OpenSource/)
+
+[协会b站](https://space.bilibili.com/1171066524/)
+
+邮箱:[opensustech@outlook.com](opensustech@outlook.com)
+
+### 友情链接
+
+##### 南科大相关社团
+
+[计算机研究协会](https://www.cra.moe/)
