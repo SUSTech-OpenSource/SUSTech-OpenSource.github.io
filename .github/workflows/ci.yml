@@ -3,19 +3,45 @@ name: ci
 on:
   push:
     branches:
-      - master 
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      LSI: 'true'
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/setup-ruby@v1
         with:
-          python-version: 3.x
-      # make mkdoc-material a fixed version so that the forced replacement for search_index.py won't interrupt the deployment
-      - run: pip install mkdocs-material==8.3.6
-      - run: pip install jieba
-      # get global site-packages path, see https://stackoverflow.com/a/46071447/15820495
-      - run: cp search_index.py $(python -c 'import site; print(site.getsitepackages()[0])')/mkdocs/contrib/search/
-      - run: mkdocs gh-deploy --force
+          ruby-version: 3.0
+      - name: Ready Bundler
+        id: cache
+        uses: actions/cache@v2
+        env:
+          CACHE_ID: 1
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-${{ hashFiles('Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-${{ env.CACHE_ID }}-
+      - name: bundle install
+        run: |
+          bundle install --path=vendor/bundle --jobs=4 --retry=3
+      - name: Check before build
+        run: |
+          bundle exec jekyll doctor --trace --profile
+      - name: Build page
+        run: |
+          bundle exec jekyll build --trace --profile
+        env:
+          JEKYLL_ENV: production
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          BRANCH: gh-pages
+          FOLDER: ./_site

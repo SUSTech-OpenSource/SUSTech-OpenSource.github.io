@@ -1,0 +1,24 @@
+---
+title: "南科大开源协会"
+excerpt: "南科大开源协会"
+tagline: "南科大开源协会"
+permalink: /
+layout: archive
+---
+
+
+
+
+
+  
+<div class="archive-group">
+    <div class="archive-group__item">
+      <h3 class="archive__subtitle">
+        <a href="{{ "/news/" | relative_url }}">最新资讯</a>
+      </h3>
+      {% assign posts = site.news | sort: 'date' | reverse %}
+      {% for post in posts limit: 5 %}
+        {% include archive-single.html %}
+      {% endfor %}
+    </div>
+</div>
