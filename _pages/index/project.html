@@ -1,0 +1,18 @@
+---
+title: "项目开发"
+permalink: /project/
+layout: archive
+toc: false
+related: false
+---
+<div class="archive-group">
+  <div class="archive-group__item">
+    <h3 class="archive__subtitle">
+      近期项目
+    </h3>
+    {% assign posts = site.project | sort: 'date' | reverse %}
+    {% for post in posts limit: 5 %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </div>
+</div>

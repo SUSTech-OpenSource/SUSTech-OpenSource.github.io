@@ -1,0 +1,18 @@
+---
+title: "创意工坊"
+permalink: /ideas/
+layout: archive
+toc: false
+related: false
+---
+<div class="archive-group">
+  <div class="archive-group__item">
+    <h3 class="archive__subtitle">
+      最近点子
+    </h3>
+    {% assign posts = site.ideas | sort: 'date' | reverse %}
+    {% for post in posts limit: 5 %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </div>
+</div>
