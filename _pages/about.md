@@ -24,3 +24,5 @@ date:   2022-07-23 01:47:45 +0800
 ![qq_group](../assets/images/qq_group.png)
 
 请在入群的时候填写您的信息，如果非南科大学生，可以填写您所在院校或企业的名称
+
+我们也有telegram的群组[https://t.me/+kt3dejtUQgswMTA9](https://t.me/+kt3dejtUQgswMTA9)
