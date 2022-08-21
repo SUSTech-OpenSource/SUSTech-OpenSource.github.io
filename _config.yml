@@ -15,6 +15,7 @@ search_full_content:          true # true, false (default)
 email:                        opensustech@outlook.com
 description:                  南科大开源软件协会官网
 url:                          "https://sustech-opensource.github.io"
+baseurl:                      ""
 github_username:              SUSTech-OpenSource
 locale:                       "zh-CN"
 markdown:                     kramdown
