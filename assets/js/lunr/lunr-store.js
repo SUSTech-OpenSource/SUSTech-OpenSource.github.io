@@ -24,7 +24,7 @@ var store = [{
 "teaser": null
 },{
 "title": "友情链接",
-"excerpt":"南科大相关组织   CRA：https://www.cra.moe/   CTF：https://wiki.compasa.college/   开源社区   Arch Linux中文社区：https://bbs.archlinuxcn.org   Github：https://github.com  ","categories": [],
+"excerpt":"南科大相关组织   CRA：https://www.cra.moe/   CTF：https://wiki.compass.college/   开源社区   Arch Linux中文社区：https://bbs.archlinuxcn.org   Github：https://github.com  ","categories": [],
 "tags": [],
 "url": "/friendlylink/",
 "teaser": null
