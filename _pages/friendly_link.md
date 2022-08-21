@@ -7,7 +7,7 @@ date:   2022-08-03
 
 CRA：[https://www.cra.moe/](https://www.cra.moe/)
 
-CTF：[https://wiki.compasa.college/](https://wiki.compasa.college/)
+CTF：[https://wiki.compass.college/](https://wiki.compass.college/)
 
 ## 开源社区
 
