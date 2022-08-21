@@ -1,0 +1,15 @@
+main:
+  - title: "新闻"
+    url: /news/
+  - title: "创意工坊"
+    url: /ideas/
+  - title: "项目开发"
+    url: /project/
+  - title: "关于我们"
+    url: /about/
+  - title: "友情链接"
+    url: /friendlylink/
+  - title: "按标签分类"
+    url: /tags/
+  - title: "本站仓库"
+    url: https://github.com/SUSTech-OpenSource/SUSTech-OpenSource.github.io

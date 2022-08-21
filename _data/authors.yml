@@ -1,0 +1,13 @@
+# 这里添加你的作者信息
+happys:
+  name: 开心
+  avatar: "https://avatars.githubusercontent.com/u/56923707?v=4" # 注意，头像这种资源就不要上传到仓库了
+  bio: 一名菜鸡程序员
+  location: 南方科技大学
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:happys2333@outlook.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/happys2333"
