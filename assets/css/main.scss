@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# Reference: https://mmistakes.github.io/minimal-mistakes/docs/stylesheets/
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// ===== overrides =====
+
+.site-title {
+  font-size: 1.2em;
+}
+
+#main {
+  margin-top: 1em;
+}
+
+.archive__item-excerpt {
+  font-size: 0.85em;
+}
+
+.sidebar {
+  @include breakpoint($large) {
+    &.sticky {
+      max-height: calc(100vh - #{$nav-height} - 1em);
+    }
+  }
+}
+
+.sticky {
+  @include breakpoint($large) {
+    top: 1em;
+  }
+}
+
+.toc__menu {
+  a {
+    padding: 0.35rem 0.75rem;
+  }
+}
+
+html {
+  font-size: 16px;
+
+  @include breakpoint($medium) {
+    font-size: 18px;
+  }
+}
